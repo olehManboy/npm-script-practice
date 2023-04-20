@@ -4,9 +4,14 @@
   "description": "this is repository of npm script testing",
   "main": "index.js",
   "scripts": {
+    "start":"node test.js",
+    "hello:js" : "node ./test.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "hello-world": "echo \"hello world\"",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "hello-test" : "npm run test & npm run hello-world",
+    "config:tag" : "echo \"tag: $npm_config_tag\"",
+    "package:name" : "echo \"package name: $npm_package_name\""
   },
   "repository": {
     "type": "git",
